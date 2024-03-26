@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "title": "Long Description",
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "permissions": {
+            "type": "string",
+            "default": "read",
+            "enum": [
+              "read",
+              "write"
+            ]
+          }
+        }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["uid", "description", "permissions"],
+        "properties": {
+          "uid": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "api_spec": {
+            "type": "string"
+          },
+          "permissions": {
+            "type": "string",
+            "default": "read",
+            "enum": [
+              "read",
+              "write"
+            ]
+          }
+        }
+      }
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "inputs"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "inputs": {
+            "type": "array",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "required": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["name", "due_date"]
+}

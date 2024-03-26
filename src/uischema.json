@@ -1,0 +1,102 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Group",
+      "label": "General Settings",
+      "elements": [
+        {
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "label": "Name",
+              "scope": "#/properties/name"
+            },
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "label": "Description",
+                  "scope": "#/properties/description"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Data Resources",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "label": "Enter one or more data resources. These provide you with the tools needed to support the agents.",
+                  "scope": "#/properties/data",
+                  "options": {
+                    "showSortButtons": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "label": "Tools Resources",
+                  "scope": "#/properties/tools",
+                  "options": {
+                    "showSortButtons": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "label": "Agent Resources",
+                  "scope": "#/properties/tools",
+                  "options": {
+                    "showSortButtons": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
