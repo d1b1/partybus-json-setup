@@ -29,9 +29,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-old": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "build2": "parcel build index.html"
+    "build": "parcel build index.html"
   },
   "eslintConfig": {
     "extends": [
