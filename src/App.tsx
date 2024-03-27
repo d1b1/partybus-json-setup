@@ -47,7 +47,8 @@ const initialData = {
     { uid: '11111', description: 'Sends an SMS via Twilio.', api_spec: 'https://google.com', permissions: 'read' }
   ],
   agents: [
-    { uid: '', name: '', description: '' }
+    {  name: 'Ad Copy Writer', description: 'Junior add writer', inputs: 'title=1111' },
+    {  name: 'Blog Writer (Senior)', description: 'Senor blog  writer', inputs: 'min-length=2222' },
   ],
   data: [
     { uid: '11111', permissions: 'read', description: 'Google Places API' },

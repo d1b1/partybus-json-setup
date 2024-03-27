@@ -9,6 +9,16 @@
       "title": "Long Description",
       "type": "string"
     },
+    "compute": {
+      "title": "Compute Resources",
+      "type": "string",
+      "enum": [
+        "OpenAI API",
+        "Google Gemini",
+        "Anthropic",
+        "Facebook Claud"
+      ]
+    },
     "data": {
       "type": "array",
       "items": {
@@ -70,15 +80,7 @@
             "type": "string"
           },
           "inputs": {
-            "type": "array",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "required": {
-                "type": "boolean"
-              }
-            }
+            "type": "string"
           }
         }
       }

@@ -22,6 +22,16 @@
                   "scope": "#/properties/description"
                 }
               ]
+            },
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "label": "Compute Resource",
+                  "scope": "#/properties/compute"
+                }
+              ]
             }
           ]
         }
@@ -87,7 +97,7 @@
                 {
                   "type": "Control",
                   "label": "Agent Resources",
-                  "scope": "#/properties/tools",
+                  "scope": "#/properties/agents",
                   "options": {
                     "showSortButtons": true
                   }
